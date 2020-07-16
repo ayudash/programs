@@ -10,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-load("~/Desktop/trpv1_lowq.txt")
+read.csv("~/Desktop/trpv1_lowq.txt")
 tab = trpv1_lowq
 ```
 ```{r}
