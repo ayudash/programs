@@ -1,0 +1,20 @@
+---
+title: "Challenge 2"
+author: "Ayusman Dash"
+date: "7/16/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+load("~/Desktop/trpv1_lowq.txt")
+tab = trpv1_lowq
+```
+```{r}
+library(DT)
+datatable(tab, colnames = names(tab), options = list(scrollX = FALSE, 
+  keys = TRUE, pageLength = 10), caption = paste("Table 1"), rownames = TRUE)
+```
